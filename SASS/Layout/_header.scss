@@ -1,0 +1,22 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  padding: 14px 108px 5px 115px;
+  & img {
+    padding: 0px 19px 8px 16px;
+    width: 162px;
+    @media (min-width: 375px) {
+      width: 200px;
+    }
+  }
+
+  & .fa-arrow-left {
+    display: none;
+    left: 25px;
+    top:30px;
+    position: absolute;
+  }
+}

@@ -1,0 +1,120 @@
+
+
+
+.restaurants {
+  box-sizing: border-box;
+  margin-bottom: 66px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 17px;
+  padding-right: 18px;
+  gap: 18px;
+  background:$background;
+  @media (min-width: 520px) {
+    padding-bottom: 30px;
+  }
+  @media (min-width: 1100px) {
+    padding: 29px 180px 30px 180px;
+  }
+
+  & .position-card {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    @media (min-width: 520px) {
+      flex-direction: row;
+      gap: 46px;
+    }
+    @media (min-width: 900px) {
+      flex-direction: row;
+      gap: 92px;
+    }
+  }
+  & .menu-card {
+    display: block;
+    align-items: flex-start;
+    flex-direction: row;
+    position: relative;
+    height: 251px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: $white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    @media (min-width: 375px) {
+      width: 100%;
+    }
+    & .selection-menu {
+      text-decoration: none;
+      color: black;
+    }
+    & .badge-nouveau {
+      margin: 0px;
+      height: 0px;
+      display: flex;
+      position: absolute;
+      top: 0px;
+      right: 12px;
+      & p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 29px;
+        color: $green-font;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        background-color: $green;
+        box-shadow: $shadow;
+        border-radius: 2px;
+      }
+    }
+  }
+
+  & img {
+    margin-top: -57px;
+    width: 100%;
+    content: normal;
+    clip-path: inset(57px 0px 0px 0px);
+    height: 231px;
+    object-fit: cover;
+  }
+  & .menu-card-content {
+    padding: 16px 25px 12px 13px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    & .card-txt {
+      display: flex;
+      flex-direction: column;
+
+      & h4 {
+        margin-bottom: 5px;
+      }
+    }
+  }
+  & span {
+    position: absolute;
+    right: 24px;
+    display: initial;
+    width: 22px;
+
+    align-items: center;
+    color: $white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    transition: all 200ms;
+    &:hover {
+      color: transparent;
+      background-clip: border-box;
+      -webkit-background-clip: text;
+      background-image: $button-gradient;
+      -webkit-text-stroke: transparent;
+    }
+  }
+}

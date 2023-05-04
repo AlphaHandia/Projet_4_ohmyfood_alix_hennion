@@ -1,0 +1,46 @@
+.explore {
+  padding-top: 39.5px;
+  padding-bottom: 37px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: $background;
+  @media (min-width: 375px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  & a {
+    text-decoration: none;
+  }
+  & button {
+    background: $button-gradient;
+    color: $white;
+    width: 218px;
+height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 13px 18.75px;
+    border-radius: 25px;
+    border: none;
+    margin-top: 27px;
+    margin-bottom: 57px;
+    transition: all 400ms;
+    & p {
+      color: $white;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    
+    }
+    &:hover {
+      box-shadow: $shadow-button-hover;
+      opacity: 0.75;
+    }
+  }
+}

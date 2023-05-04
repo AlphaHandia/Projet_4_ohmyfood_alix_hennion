@@ -1,0 +1,88 @@
+.fonctionnement {
+  @media (min-width: 375px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media (min-width: 768px) {
+    padding: 48px 180px 68px 180px;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (min-width: 1440px){
+    justify-content: center;
+    align-items: center;
+  }
+  & h2 {
+    @media (min-width: 1220px) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    @media (min-width: 1440px){
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  & .position-button {
+    gap: 24.92px;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 1220px) {
+      width: 100%;
+      flex-direction: row;
+    }
+    @media (min-width: 1440px){
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  & button {
+    margin-left: 12.41px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    gap: 24.92px;
+
+    & span {
+      width: 24px;
+      height: 24px;
+      margin-left: -20px;
+      color: $white;
+      background: $primary-color;
+      border-radius: 25px;
+      border: none;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      font-weight: 500;
+      font-size: 14.1818px;
+      line-height: 17px;
+    }
+    & .fa-mobile-screen-button {
+      color: #7e7e7e;
+      width: 13.02px;
+      height: 19.9px;
+    }
+    & .fa-list-ul {
+      color: #7e7e7e;
+      width: 16px;
+      height: 15.92px;
+    }
+    & .fa-store {
+      color: $primary-color;
+      width: 18px;
+      height: 17.91px;
+    }
+  }
+}

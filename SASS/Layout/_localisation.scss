@@ -1,0 +1,15 @@
+.localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 50px;
+  gap: 17px;
+  background: $grey-2;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}

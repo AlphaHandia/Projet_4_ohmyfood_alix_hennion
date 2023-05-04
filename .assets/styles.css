@@ -1,0 +1,83 @@
+body {
+  width: 375px;
+  height: 2252px;
+  margin: 0px;
+  background: #FFFFFF;
+}
+
+h1 {
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 41px;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+header {
+  display: flex;
+  text-align: center;
+  margin: 14px 89px 13px 89px;
+}
+header img {
+  padding: 0px 19px 8px 16px;
+  width: 100%;
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 17px;
+  background: #EAEAEA;
+}
+
+.explore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #F7F7F7;
+}
+.explore button {
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  color: #FFFFFF;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 13px 18.75px;
+  border-radius: 25px;
+  border: none;
+}
+
+/*# sourceMappingURL=styles.css.map */

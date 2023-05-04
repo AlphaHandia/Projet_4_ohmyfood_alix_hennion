@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "project_4_openclassrooms_alix_hennion",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./SASS/main.scss:./assets/css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlphaHandia/Projet_4_ohmyfood_alix_hennion.git"
+  },
+  "author": "alix hennion",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlphaHandia/Projet_4_ohmyfood_alix_hennion/issues"
+  },
+  "homepage": "https://github.com/AlphaHandia/Projet_4_ohmyfood_alix_hennion#readme"
+}
