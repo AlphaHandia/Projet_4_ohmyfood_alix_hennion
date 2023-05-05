@@ -66,3 +66,62 @@ h6 {
   width: 322.49px;
   border: none;
 }
+.loader {
+  position: fixed;
+    top: 45%;
+   
+  width:100%;
+  height: $loader-size;
+  
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+  
+  i {
+    position: absolute;
+    opacity:0;
+    font-size: $loader-size*0.6;
+    color: $green-font;
+    animation: spin 1s ease-in 3;
+    
+  }
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    
+    width: $loader-size;
+    height: $loader-size;
+    
+    animation: spin 1s ease-in-out 3;
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    
+    width: $loader-size - 10px;
+    height: $loader-size - 10px;
+    border: 5px solid $primary-color;
+    border-radius: 50%;
+    border-right-color: $button-gradient;
+    border-bottom-color: $green;
+    animation: spin 1s ease-in-out 3;
+    opacity:0;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+    opacity:0;
+  }
+  50% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
