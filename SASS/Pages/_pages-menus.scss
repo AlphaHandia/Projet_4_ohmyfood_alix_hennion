@@ -41,11 +41,12 @@ main {
     padding: 31px 13px 0px 13px;
     border: none;
     border-radius: 40px 40px 0px 0px;
+    
     & h1 {
       width: 100%;
       text-align: left;
       justify-items: left;
-      @media (min-width: 375px) {
+      @media (min-width: 400px) {
         justify-items: center;
         text-align: center;
       }
@@ -68,8 +69,12 @@ main {
     & .heart-color-2 {
       position: relative;
       right: -160px;
-      top: -52px;
-
+      top: -55px;
+      & .fa-lg {
+        font-size: 1.45em;
+    line-height: 1em;
+    vertical-align: -.075em;
+      }
       & i {
         display: initial;
         width: 22px;
@@ -92,6 +97,11 @@ main {
       width:100%;
       margin-left:13px;
       margin-right:13px;
+      
+      & .anim0 {animation: myAnim0 2s ease 0ms 1 normal forwards;}
+      & .anim1 {animation: myAnim1 5s ease 0ms 1 normal forwards;}
+      & .anim2 {animation: myAnim2 7s ease 0ms 1 normal forwards;}
+
       & .article-title {
         width: 275px;
         margin: 18.76px 0px 27px 0px;
@@ -198,5 +208,54 @@ main {
         opacity: 0.75;
       }
     }
+  }
+  @keyframes myAnim0 {
+    0% {
+      opacity: 0.0;
+      transform: translateY(40px);
+    }
+    50%{
+      opacity:0.25;
+      transform: translateY(20px)
+    }
+  
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+    @keyframes myAnim1 {
+      0% {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      50% {
+        opacity:0.25;
+        transform: translateY(20px)
+      }
+    
+       
+      
+    
+      100% {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+      @keyframes myAnim2 {
+        0% {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        50% {
+          opacity:0.25;
+          transform: translateY(20px)
+        }
+      
+        100% {
+          opacity: 1;
+          transform: translateY(0px);
+        }
   }
 }
