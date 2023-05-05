@@ -86,7 +86,7 @@ h6 {
   position: absolute;
   opacity: 0;
   font-size: 72px;
-  color: #008766;
+  color: #9356dc;
   animation: spin 1s ease-in 3;
 }
 .loader::before {
@@ -105,7 +105,7 @@ h6 {
   height: 110px;
   border: 5px solid #9356dc;
   border-radius: 50%;
-  border-right-color: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  border-right-color: #fca311;
   border-bottom-color: #99e2d0;
   animation: spin 1s ease-in-out 3;
   opacity: 0;
