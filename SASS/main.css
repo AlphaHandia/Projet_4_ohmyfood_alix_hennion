@@ -154,11 +154,17 @@ header .fa-arrow-left {
   height: 50px;
   gap: 17px;
   background: #eaeaea;
-  font-family: "Roboto";
+}
+.localisation input {
+  width: 109px;
+  text-decoration: none;
+  border: none;
+  background: #eaeaea;
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 16px;
   line-height: 19px;
+  font-family: "Roboto";
 }
 
 .explore {
@@ -183,12 +189,14 @@ header .fa-arrow-left {
 .explore button {
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   color: #ffffff;
-  width: 218px;
   height: 50px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
   padding: 13px 18.75px;
   border-radius: 25px;
   border: none;
@@ -209,6 +217,9 @@ header .fa-arrow-left {
   opacity: 0.75;
 }
 
+.fonctionnement {
+  padding-left: 20px;
+}
 @media (min-width: 375px) {
   .fonctionnement {
     display: flex;
@@ -307,7 +318,6 @@ header .fa-arrow-left {
 }
 
 .restaurants {
-  box-sizing: border-box;
   padding-bottom: 66px;
   display: flex;
   flex-direction: column;
@@ -331,6 +341,11 @@ header .fa-arrow-left {
   flex-direction: column;
   gap: 18px;
 }
+@media (min-width: 375px) {
+  .restaurants .position-card {
+    margin-bottom: 30px;
+  }
+}
 @media (min-width: 520px) {
   .restaurants .position-card {
     flex-direction: row;
@@ -345,8 +360,6 @@ header .fa-arrow-left {
 }
 .restaurants .menu-card {
   display: block;
-  align-items: flex-start;
-  flex-direction: row;
   position: relative;
   height: 251px;
   border-radius: 15px;
@@ -364,7 +377,6 @@ header .fa-arrow-left {
   color: black;
 }
 .restaurants .menu-card .badge-nouveau {
-  margin: 0px;
   height: 0px;
   display: flex;
   position: absolute;
@@ -442,7 +454,6 @@ footer {
   padding: 22px 25px;
   background: #353535;
   color: #ffffff;
-  flex: 1;
 }
 @media (min-width: 600px) {
   footer {
@@ -637,21 +648,16 @@ main .menu-restaurants .article-card .btn {
   text-align: start;
   padding: 12px 16px 12px 15px;
   isolation: isolate;
+  overflow: hidden;
   background: #ffffff;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   border: none;
   border-radius: 15.0431px;
   margin-bottom: 12px;
   position: relative;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 main .menu-restaurants .article-card .btn .position-menu {
   flex-direction: column;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 main .menu-restaurants .article-card .btn p {
   margin-bottom: 0px;

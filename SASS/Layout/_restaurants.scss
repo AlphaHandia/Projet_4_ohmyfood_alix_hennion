@@ -1,15 +1,11 @@
-
-
-
 .restaurants {
-  box-sizing: border-box;
   padding-bottom: 66px;
   display: flex;
   flex-direction: column;
   padding-left: 17px;
   padding-right: 18px;
   gap: 18px;
-  background:$background;
+  background: $background;
   @media (min-width: 520px) {
     padding-bottom: 30px;
   }
@@ -21,6 +17,9 @@
     display: flex;
     flex-direction: column;
     gap: 18px;
+    @media (min-width: 375px) {
+      margin-bottom: 30px;
+    }
     @media (min-width: 520px) {
       flex-direction: row;
       gap: 46px;
@@ -32,8 +31,6 @@
   }
   & .menu-card {
     display: block;
-    align-items: flex-start;
-    flex-direction: row;
     position: relative;
     height: 251px;
     border-radius: 15px;
@@ -48,7 +45,6 @@
       color: black;
     }
     & .badge-nouveau {
-      margin: 0px;
       height: 0px;
       display: flex;
       position: absolute;
@@ -84,7 +80,6 @@
   }
   & .menu-card-content {
     padding: 16px 25px 12px 13px;
-
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -102,7 +97,6 @@
     position: absolute;
     right: 24px;
     display: initial;
-    
 
     align-items: center;
     color: $white;
@@ -111,8 +105,8 @@
     transition: all 200ms;
     & .fa-lg {
       font-size: 1.45em;
-    line-height: 1em;
-    vertical-align: -.075em;
+      line-height: 1em;
+      vertical-align: -0.075em;
     }
     &:hover {
       color: transparent;

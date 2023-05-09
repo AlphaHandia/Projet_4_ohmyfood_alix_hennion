@@ -2,14 +2,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   height: 50px;
   gap: 17px;
   background: $grey-2;
 
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
+  & input {
+    width: 109px;
+    text-decoration: none;
+    border: none;
+    background: $grey-2;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: "Roboto";
+  }
 }
