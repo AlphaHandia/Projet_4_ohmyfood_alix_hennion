@@ -41,6 +41,10 @@ footer {
           flex-direction: row;
         }
       }
+      & a {
+        text-decoration: none;
+        color:$white;
+      }
     }
   }
   & .logo-white {

@@ -431,7 +431,7 @@ header .fa-arrow-left {
   color: #ffffff;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
-  transition: all 200ms;
+  transition: all 400ms;
 }
 .restaurants span .fa-lg {
   font-size: 1.45em;
@@ -498,6 +498,10 @@ footer ul li .fa-solid {
   footer ul li .fa-solid {
     flex-direction: row;
   }
+}
+footer ul li a {
+  text-decoration: none;
+  color: #ffffff;
 }
 footer .logo-white {
   filter: invert(100%);
