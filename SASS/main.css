@@ -43,6 +43,8 @@ h4 {
   font-size: 18px;
   line-height: 21px;
   margin: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 h5 {
@@ -61,6 +63,8 @@ h6 {
   font-weight: 300;
   font-size: 15.0431px;
   line-height: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .button-card {
@@ -219,6 +223,7 @@ header .fa-arrow-left {
 
 .fonctionnement {
   padding-left: 20px;
+  padding-bottom: 60px;
 }
 @media (min-width: 375px) {
   .fonctionnement {
@@ -232,6 +237,11 @@ header .fa-arrow-left {
     padding: 48px 180px 68px 180px;
     justify-content: center;
     align-items: center;
+  }
+}
+@media (min-width: 1220px) {
+  .fonctionnement {
+    padding-bottom: 50px;
   }
 }
 @media (min-width: 1440px) {
@@ -595,8 +605,13 @@ main .menu-restaurants h1 {
 }
 main .menu-restaurants .heart-color-2 {
   position: relative;
-  right: -160px;
+  right: -140px;
   top: -55px;
+}
+@media (min-width: 400px) {
+  main .menu-restaurants .heart-color-2 {
+    right: -170px;
+  }
 }
 main .menu-restaurants .heart-color-2 .fa-lg {
   font-size: 1.45em;
@@ -653,6 +668,8 @@ main .menu-restaurants .article-card .btn {
   padding: 12px 16px 12px 15px;
   isolation: isolate;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   background: #ffffff;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   border: none;
@@ -662,6 +679,9 @@ main .menu-restaurants .article-card .btn {
 }
 main .menu-restaurants .article-card .btn .position-menu {
   flex-direction: column;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 main .menu-restaurants .article-card .btn p {
   margin-bottom: 0px;
@@ -696,6 +716,14 @@ main .menu-restaurants .article-card .btn .check span i {
   position: absolute;
   top: 15px;
   right: -30px;
+}
+main .menu-restaurants .article-card .btn:hover .position-menu {
+  width: 70%;
+}
+@media (min-width: 420px) {
+  main .menu-restaurants .article-card .btn:hover .position-menu {
+    width: 100%;
+  }
 }
 main .menu-restaurants .article-card .btn:hover .check {
   transform: translateX(-60px);
