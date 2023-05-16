@@ -239,26 +239,21 @@ header .fa-arrow-left {
 }
 
 .fonctionnement {
-  padding-left: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
   padding-bottom: 60px;
-}
-@media (min-width: 375px) {
-  .fonctionnement {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 }
 @media (min-width: 768px) {
   .fonctionnement {
-    padding: 48px 180px 68px 180px;
     justify-content: center;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
-@media (min-width: 1220px) {
+@media (min-width: 1100px) {
   .fonctionnement {
-    padding-bottom: 50px;
+    padding: 48px 180px 68px 180px;
   }
 }
 @media (min-width: 1440px) {
@@ -287,8 +282,9 @@ header .fa-arrow-left {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 1220px) {
+@media (min-width: 768px) {
   .fonctionnement .position-button {
+    align-items: flex-start;
     width: 100%;
     flex-direction: row;
   }
@@ -297,9 +293,12 @@ header .fa-arrow-left {
   .fonctionnement .position-button {
     justify-content: center;
     align-items: center;
+    padding-left: 180px;
+    padding-right: 180px;
   }
 }
 .fonctionnement button {
+  width: 97%;
   margin-left: 12.41px;
   display: flex;
   flex-direction: row;
@@ -353,7 +352,7 @@ header .fa-arrow-left {
   gap: 18px;
   background: #f7f7f7;
 }
-@media (min-width: 520px) {
+@media (min-width: 768px) {
   .restaurants {
     padding-bottom: 30px;
   }
@@ -368,14 +367,10 @@ header .fa-arrow-left {
   flex-direction: column;
   gap: 18px;
 }
-@media (min-width: 375px) {
-  .restaurants .position-card {
-    margin-bottom: 30px;
-  }
-}
-@media (min-width: 520px) {
+@media (min-width: 768px) {
   .restaurants .position-card {
     flex-direction: row;
+    margin-bottom: 30px;
     gap: 46px;
   }
 }
@@ -487,7 +482,7 @@ footer {
   font-size: 16px;
   line-height: 19px;
 }
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   footer {
     flex-direction: row-reverse;
     align-items: flex-end;
@@ -501,7 +496,7 @@ footer ul {
   list-style-type: none;
   padding-left: 0px;
 }
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   footer ul {
     display: inline-flex;
     flex-direction: row;
@@ -515,7 +510,7 @@ footer ul {
 footer ul li {
   padding-bottom: 7px;
 }
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   footer ul li {
     display: inline-flex;
     flex-direction: row;
@@ -526,7 +521,7 @@ footer ul li {
 footer ul li .fa-solid {
   margin-right: 11px;
 }
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   footer ul li .fa-solid {
     flex-direction: row;
   }
@@ -540,7 +535,7 @@ footer .logo-white {
   width: 27.5%;
   height: 27px;
 }
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   footer .logo-white {
     width: 137.58px;
   }
@@ -567,7 +562,7 @@ main .position-image img {
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media (min-width: 375px) {
+@media (min-width: 768px) {
   main .position-image img {
     height: 375px;
   }
@@ -584,9 +579,14 @@ main .menu-restaurants {
   align-items: flex-start;
   padding-bottom: 66px;
   background: #f7f7f7;
-  padding: 31px 13px 0px 13px;
+  padding: 31px 23px 0px 23px;
   border: none;
   border-radius: 40px 40px 0px 0px;
+}
+@media (min-width: 450px) {
+  main .menu-restaurants {
+    align-items: center;
+  }
 }
 main .menu-restaurants h1 {
   font-family: "Shrikhand", cursive;
@@ -595,14 +595,10 @@ main .menu-restaurants h1 {
   font-size: 28px;
   line-height: 41px;
 }
-@media (min-width: 400px) {
+@media (min-width: 768px) {
   main .menu-restaurants h1 {
     justify-items: center;
     text-align: center;
-  }
-}
-@media (min-width: 570px) {
-  main .menu-restaurants {
     margin-left: 96.25px;
     margin-right: 96.25px;
   }
@@ -627,9 +623,9 @@ main .menu-restaurants .heart-color-2 {
   left: 300px;
   top: -55px;
 }
-@media (min-width: 400px) {
+@media (min-width: 450px) {
   main .menu-restaurants .heart-color-2 {
-    right: -170px;
+    left: 200px;
   }
 }
 main .menu-restaurants .heart-color-2 .fa-lg {
