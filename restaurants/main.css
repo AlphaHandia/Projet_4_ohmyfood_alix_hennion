@@ -84,7 +84,7 @@ main .main-anim {
 .loader {
   position: fixed;
   top: 45%;
-  left: 50%;
+  width: 100%;
   height: 120px;
   z-index: 1;
   display: flex;
