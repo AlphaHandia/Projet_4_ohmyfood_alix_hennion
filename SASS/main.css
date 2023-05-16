@@ -76,6 +76,11 @@ h6 {
   border: none;
 }
 
+main .main-anim {
+  opacity: 0;
+  animation: main-anim 3125ms linear 0ms 1 normal forwards;
+}
+
 .loader {
   position: fixed;
   top: 45%;
@@ -125,6 +130,17 @@ h6 {
   }
   100% {
     opacity: 0;
+  }
+}
+@keyframes main-anim {
+  0% {
+    opacity: 0;
+  }
+  96% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 header {
@@ -534,10 +550,6 @@ header .fa-arrow-left {
   text-decoration-color: black;
 }
 
-main .main-anim {
-  opacity: 0;
-  animation: main-anim 3125ms linear 0ms 1 normal forwards;
-}
 main .position-image {
   box-sizing: border-box;
   position: relative;
@@ -647,7 +659,7 @@ main .menu-restaurants .article-card .anim1 {
   animation: myAnim1 5s ease 3s 1 normal forwards;
 }
 main .menu-restaurants .article-card .anim2 {
-  animation: myAnim2 7s ease 3s 1 normal forwards;
+  animation: myAnim2 6s ease 3s 1 normal forwards;
 }
 main .menu-restaurants .article-card .article-title {
   width: 275px;
@@ -790,16 +802,5 @@ main .menu-restaurants .commander:hover {
   100% {
     opacity: 1;
     transform: translateY(0px);
-  }
-}
-@keyframes main-anim {
-  0% {
-    opacity: 0;
-  }
-  96% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -67,6 +67,13 @@ h6 {
   width: 322.49px;
   border: none;
 }
+
+main {
+  & .main-anim {
+    opacity: 0;
+    animation: main-anim 3125ms linear 0ms 1 normal forwards;
+  }
+}
 .loader {
   position: fixed;
   top: 45%;
@@ -121,3 +128,14 @@ h6 {
     opacity: 0;
   }
 }
+@keyframes main-anim {
+    0% {
+      opacity: 0;
+    }
+    96% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

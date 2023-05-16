@@ -11,10 +11,7 @@ header {
 }
 
 main {
-  & .main-anim {
-    opacity: 0;
-    animation: main-anim 3125ms linear 0ms 1 normal forwards;
-  }
+  
   & .position-image {
     box-sizing: border-box;
     position: relative;
@@ -111,7 +108,7 @@ main {
         animation: myAnim1 5s ease 3s 1 normal forwards;
       }
       & .anim2 {
-        animation: myAnim2 7s ease 3s 1 normal forwards;
+        animation: myAnim2 6s ease 3s 1 normal forwards;
       }
 
       & .article-title {
@@ -264,15 +261,5 @@ main {
       transform: translateY(0px);
     }
   }
-  @keyframes main-anim {
-    0% {
-      opacity: 0;
-    }
-    96% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
+  
 }
