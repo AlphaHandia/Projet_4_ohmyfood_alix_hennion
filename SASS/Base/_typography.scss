@@ -5,14 +5,8 @@ body {
   background: $white;
 }
 
+
 h1 {
-  font-family: "Shrikhand", cursive;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 41px;
-}
-h2 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -23,7 +17,7 @@ h2 {
     line-height: 47px;
   }
 }
-h3 {
+h2 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -31,7 +25,7 @@ h3 {
   line-height: 20px;
   margin: 0px;
 }
-h4 {
+h3 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -41,13 +35,21 @@ h4 {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-h5 {
+h4 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
+}
+h5 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  margin:0px;
 }
 h6 {
   margin: 5px 0px 0px 0px;

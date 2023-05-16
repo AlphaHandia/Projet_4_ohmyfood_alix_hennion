@@ -6,7 +6,11 @@ footer {
   padding: 22px 25px;
   background: $grey;
   color: $white;
-
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
   @media (min-width: 600px) {
     flex-direction: row-reverse;
     align-items: flex-end;
