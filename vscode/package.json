@@ -4,7 +4,7 @@
   "description": "project_4_openclassrooms_alix_hennion",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./SASS/main.scss:./assets/styles.css"
+    "sass": "sass --watch ./SASS/main.scss:./SASS/main.css"
   },
   "repository": {
     "type": "git",
