@@ -115,4 +115,36 @@
       -webkit-text-stroke: transparent;
     }
   }
+
+}
+.heart__icon{
+  position: absolute;
+  right: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+  
+  & .fa-regular{
+    font-size: 1.8em;
+  }
+  &--empty{
+      position: absolute;
+      color: black;
+  }
+  &--full{
+      position: absolute;
+      opacity: 0;
+      background: linear-gradient(#FF79DA, #9356DC);
+      background-clip: text;
+      color: transparent;
+      transition: all 400ms;
+  }
+  &:hover &--full{
+      opacity: 1;
+
+  }
+  &:hover &--empty{
+      opacity: 0;
+  }
 }

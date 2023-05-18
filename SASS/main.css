@@ -4,6 +4,7 @@ body {
   padding: 0px;
   background: #ffffff;
   max-width: 1440px;
+  min-width: 320px;
 }
 
 h1 {
@@ -469,6 +470,37 @@ header .fa-arrow-left {
   -webkit-text-stroke: transparent;
 }
 
+.heart__icon {
+  position: absolute;
+  right: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+}
+.heart__icon .fa-regular {
+  font-size: 1.8em;
+}
+.heart__icon--empty {
+  position: absolute;
+  color: black;
+}
+.heart__icon--full {
+  position: absolute;
+  opacity: 0;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  transition: all 400ms;
+}
+.heart__icon:hover .heart__icon--full {
+  opacity: 1;
+}
+.heart__icon:hover .heart__icon--empty {
+  opacity: 0;
+}
+
 footer {
   position: relative;
   display: flex;
@@ -580,11 +612,11 @@ main .menu-restaurants {
   align-items: flex-start;
   padding-bottom: 66px;
   background: #f7f7f7;
-  padding: 31px 23px 0px 23px;
+  padding: 0px 23px 0px 23px;
   border: none;
   border-radius: 40px 40px 0px 0px;
 }
-@media (min-width: 450px) {
+@media (min-width: 768px) {
   main .menu-restaurants {
     align-items: center;
   }
@@ -596,12 +628,13 @@ main .menu-restaurants h1 {
   font-size: 28px;
   line-height: 41px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1250px) {
   main .menu-restaurants h1 {
     justify-items: center;
     text-align: center;
-    margin-left: 96.25px;
+    margin-left: 45px;
     margin-right: 96.25px;
+    margin-top: 0px;
   }
 }
 @media (min-width: 840px) {
@@ -612,57 +645,77 @@ main .menu-restaurants h1 {
     padding-right: 100px;
   }
 }
-@media (min-width: 1160px) {
+@media (min-width: 1250px) {
   main .menu-restaurants {
     margin-left: 192.5px;
     margin-right: 192.5px;
     padding: 51px 210.5px 40px 210.5px;
   }
 }
-main .menu-restaurants .heart-color-2 {
-  position: relative;
-  left: 300px;
-  top: -55px;
+main .menu-restaurants .heart__icon-menu {
+  position: absolute;
+  right: 10px;
+  top: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
 }
-@media (min-width: 450px) {
-  main .menu-restaurants .heart-color-2 {
-    left: 200px;
+main .menu-restaurants .heart__icon-menu .fa-2x {
+  font-size: 1.6em;
+}
+@media (min-width: 340px) {
+  main .menu-restaurants .heart__icon-menu {
+    right: 25px;
   }
 }
-main .menu-restaurants .heart-color-2 .fa-lg {
-  font-size: 1.45em;
-  line-height: 1em;
-  vertical-align: -0.075em;
+@media (min-width: 375px) {
+  main .menu-restaurants .heart__icon-menu {
+    right: 41px;
+  }
 }
-main .menu-restaurants .heart-color-2 i {
-  display: initial;
-  width: 22px;
-  height: 21px;
-  align-items: center;
-  color: #ffffff;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  transition: all 2s;
+@media (min-width: 768px) {
+  main .menu-restaurants .heart__icon-menu {
+    right: 123px;
+  }
 }
-main .menu-restaurants .heart-color-2 i:hover {
-  color: transparent;
-  background-clip: border-box;
+@media (min-width: 1250px) {
+  main .menu-restaurants .heart__icon-menu {
+    top: 72.5px;
+    right: 274.5px;
+  }
+}
+main .menu-restaurants .heart__icon-menu--empty {
+  position: absolute;
+  color: black;
+}
+main .menu-restaurants .heart__icon-menu--full {
+  position: absolute;
+  opacity: 0;
+  background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
-  background-image: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
-  -webkit-text-stroke: transparent;
+          background-clip: text;
+  color: transparent;
+  transition: all 400ms;
+}
+main .menu-restaurants .heart__icon-menu:hover main .menu-restaurants .heart__icon-menu--full {
+  opacity: 1;
+}
+main .menu-restaurants .heart__icon-menu:hover main .menu-restaurants .heart__icon-menu--empty {
+  opacity: 0;
 }
 main .menu-restaurants .article-card {
   width: 100%;
   margin-right: 13px;
 }
 main .menu-restaurants .article-card .anim0 {
-  animation: myAnim0 2s ease 3s 1 normal forwards;
+  animation: myAnim0 2s ease 0s 1 normal forwards;
 }
 main .menu-restaurants .article-card .anim1 {
-  animation: myAnim1 5s ease 3s 1 normal forwards;
+  animation: myAnim1 5s ease 0s 1 normal forwards;
 }
 main .menu-restaurants .article-card .anim2 {
-  animation: myAnim2 6s ease 3s 1 normal forwards;
+  animation: myAnim2 6s ease 0s 1 normal forwards;
 }
 main .menu-restaurants .article-card .article-title {
   width: 275px;
