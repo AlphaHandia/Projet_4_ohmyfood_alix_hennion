@@ -257,7 +257,7 @@ main {
     background: linear-gradient(#ff79da, #9356dc);
     background-clip: text;
     color: transparent;
-    transition: all 400ms;
+    transition: all 1s;
   }
   &:hover &--full {
     opacity: 1;

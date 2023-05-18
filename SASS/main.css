@@ -429,10 +429,10 @@ header .fa-arrow-left {
   width: 100%;
   content: normal;
   -webkit-clip-path: inset(57px 0px 0px 0px);
-  clip-path: inset(57px 0px 0px 0px);
+          clip-path: inset(57px 0px 0px 0px);
   height: 231px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 .restaurants .menu-card-content {
   padding: 16px 25px 12px 13px;
@@ -466,11 +466,7 @@ header .fa-arrow-left {
   color: transparent;
   background-clip: border-box;
   -webkit-background-clip: text;
-  background-image: linear-gradient(
-    193.33deg,
-    #9356dc -11.44%,
-    #ff79da 123.93%
-  );
+  background-image: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   -webkit-text-stroke: transparent;
 }
 
@@ -491,7 +487,7 @@ header .fa-arrow-left {
   opacity: 0;
   background: linear-gradient(#ff79da, #9356dc);
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   color: transparent;
   transition: all 1s;
 }
@@ -594,7 +590,7 @@ main .position-image img {
   width: 100%;
   height: 275px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 @media (min-width: 768px) {
   main .position-image img {
@@ -849,13 +845,13 @@ main .menu-restaurants .commander:hover {
   opacity: 0;
   background: linear-gradient(#ff79da, #9356dc);
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   color: transparent;
-  transition: all 400ms;
+  transition: all 1s;
 }
 .heart__iconmenu:hover .heart__iconmenu--full {
   opacity: 1;
 }
 .heart__iconmenu:hover .heart__iconmenu--empty {
   opacity: 0;
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
