@@ -429,10 +429,10 @@ header .fa-arrow-left {
   width: 100%;
   content: normal;
   -webkit-clip-path: inset(57px 0px 0px 0px);
-          clip-path: inset(57px 0px 0px 0px);
+  clip-path: inset(57px 0px 0px 0px);
   height: 231px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .restaurants .menu-card-content {
   padding: 16px 25px 12px 13px;
@@ -466,7 +466,11 @@ header .fa-arrow-left {
   color: transparent;
   background-clip: border-box;
   -webkit-background-clip: text;
-  background-image: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  background-image: linear-gradient(
+    193.33deg,
+    #9356dc -11.44%,
+    #ff79da 123.93%
+  );
   -webkit-text-stroke: transparent;
 }
 
@@ -478,9 +482,6 @@ header .fa-arrow-left {
   align-items: center;
   margin-right: 16px;
 }
-.heart__icon .fa-regular {
-  font-size: 1.8em;
-}
 .heart__icon--empty {
   position: absolute;
   color: black;
@@ -488,11 +489,11 @@ header .fa-arrow-left {
 .heart__icon--full {
   position: absolute;
   opacity: 0;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#ff79da, #9356dc);
   -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   color: transparent;
-  transition: all 400ms;
+  transition: all 1s;
 }
 .heart__icon:hover .heart__icon--full {
   opacity: 1;
@@ -593,7 +594,7 @@ main .position-image img {
   width: 100%;
   height: 275px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media (min-width: 768px) {
   main .position-image img {
@@ -651,58 +652,6 @@ main .menu-restaurants h1 {
     margin-right: 192.5px;
     padding: 51px 210.5px 40px 210.5px;
   }
-}
-main .menu-restaurants .heart__icon-menu {
-  position: absolute;
-  right: 10px;
-  top: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 16px;
-}
-main .menu-restaurants .heart__icon-menu .fa-2x {
-  font-size: 1.6em;
-}
-@media (min-width: 340px) {
-  main .menu-restaurants .heart__icon-menu {
-    right: 25px;
-  }
-}
-@media (min-width: 375px) {
-  main .menu-restaurants .heart__icon-menu {
-    right: 41px;
-  }
-}
-@media (min-width: 768px) {
-  main .menu-restaurants .heart__icon-menu {
-    right: 123px;
-  }
-}
-@media (min-width: 1250px) {
-  main .menu-restaurants .heart__icon-menu {
-    top: 72.5px;
-    right: 274.5px;
-  }
-}
-main .menu-restaurants .heart__icon-menu--empty {
-  position: absolute;
-  color: black;
-}
-main .menu-restaurants .heart__icon-menu--full {
-  position: absolute;
-  opacity: 0;
-  background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
-  transition: all 400ms;
-}
-main .menu-restaurants .heart__icon-menu:hover main .menu-restaurants .heart__icon-menu--full {
-  opacity: 1;
-}
-main .menu-restaurants .heart__icon-menu:hover main .menu-restaurants .heart__icon-menu--empty {
-  opacity: 0;
 }
 main .menu-restaurants .article-card {
   width: 100%;
@@ -859,4 +808,54 @@ main .menu-restaurants .commander:hover {
     opacity: 1;
     transform: translateY(0px);
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+.heart__iconmenu {
+  position: absolute;
+  right: 10px;
+  top: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+}
+@media (min-width: 340px) {
+  .heart__iconmenu {
+    right: 25px;
+  }
+}
+@media (min-width: 375px) {
+  .heart__iconmenu {
+    right: 41px;
+  }
+}
+@media (min-width: 768px) {
+  .heart__iconmenu {
+    right: 123px;
+  }
+}
+@media (min-width: 1250px) {
+  .heart__iconmenu {
+    top: 72.5px;
+    right: 274.5px;
+  }
+}
+.heart__iconmenu--empty {
+  position: absolute;
+  color: black;
+}
+.heart__iconmenu--full {
+  position: absolute;
+  opacity: 0;
+  background: linear-gradient(#ff79da, #9356dc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: all 400ms;
+}
+.heart__iconmenu:hover .heart__iconmenu--full {
+  opacity: 1;
+}
+.heart__iconmenu:hover .heart__iconmenu--empty {
+  opacity: 0;
+} /*# sourceMappingURL=main.css.map */

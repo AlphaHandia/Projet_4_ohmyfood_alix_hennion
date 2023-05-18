@@ -9,14 +9,11 @@ header {
     text-decoration-color: black;
   }
 }
-
 main {
-  
   & .position-image {
     box-sizing: border-box;
     position: relative;
     margin-bottom: -59px;
-
     & img {
       width: 100%;
       height: 275px;
@@ -29,38 +26,33 @@ main {
       }
     }
   }
-
   & .menu-restaurants {
     position: relative;
     display: flex;
     flex-direction: column;
-    
     align-items: flex-start;
     padding-bottom: 66px;
     background: $background;
     padding: 0px 23px 0px 23px;
     border: none;
     border-radius: 40px 40px 0px 0px;
-    @media (min-width:768px){
+    @media (min-width: 768px) {
       align-items: center;
     }
     & h1 {
       font-family: "Shrikhand", cursive;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 41px;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 41px;
       @media (min-width: 1250px) {
         justify-items: center;
         text-align: center;
         margin-left: 45px;
-      margin-right: 96.25px;
-      margin-top:0px;
+        margin-right: 96.25px;
+        margin-top: 0px;
       }
     }
-    
-      
-    
     @media (min-width: 840px) {
       margin-left: 124.375px;
       margin-right: 124.375px;
@@ -72,56 +64,9 @@ main {
       margin-right: 192.5px;
       padding: 51px 210.5px 40px 210.5px;
     }
-    & .heart__icon-menu{
-      position: absolute;
-      right: 10px;
-      top:45px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-right: 16px;
-      & .fa-2x{
-        font-size: 1.6em;
-      }
-      @media(min-width: 340px){
-        right:25px;
-      }
-      @media (min-width:375px){
-        right:41px;
-      }
-      @media (min-width: 768px){
-        right: 123px;
-      }
-      @media (min-width: 1250px){
-        top: 72.5px;
-        right :274.5px;
-      }
-      &--empty{
-          position: absolute;
-          color: black;
-      }
-      &--full{
-          position: absolute;
-          opacity: 0;
-          background: linear-gradient(#FF79DA, #9356DC);
-          background-clip: text;
-          color: transparent;
-          transition: all 400ms;
-      }
-      &:hover &--full{
-          opacity: 1;
-    
-      }
-      &:hover &--empty{
-          opacity: 0;
-      }
-    
-    }
     & .article-card {
       width: 100%;
-      
       margin-right: 13px;
-
       & .anim0 {
         animation: myAnim0 2s ease 0s 1 normal forwards;
       }
@@ -131,11 +76,9 @@ main {
       & .anim2 {
         animation: myAnim2 6s ease 0s 1 normal forwards;
       }
-
       & .article-title {
         width: 275px;
         margin: 18.76px 0px 27px 0px;
-        
         & .underline {
           text-decoration: underline;
           text-underline-offset: 10px;
@@ -160,7 +103,6 @@ main {
         border-radius: 15.0431px;
         margin-bottom: 12px;
         position: relative;
-
         & .position-menu {
           flex-direction: column;
           overflow: hidden;
@@ -202,7 +144,6 @@ main {
           }
         }
       }
-
       & .btn:hover {
         & .position-menu {
           width: 70%;
@@ -283,5 +224,45 @@ main {
       transform: translateY(0px);
     }
   }
-  
+}
+.heart__iconmenu {
+  position: absolute;
+  right: 10px;
+  top: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+
+  @media (min-width: 340px) {
+    right: 25px;
+  }
+  @media (min-width: 375px) {
+    right: 41px;
+  }
+  @media (min-width: 768px) {
+    right: 123px;
+  }
+  @media (min-width: 1250px) {
+    top: 72.5px;
+    right: 274.5px;
+  }
+  &--empty {
+    position: absolute;
+    color: black;
+  }
+  &--full {
+    position: absolute;
+    opacity: 0;
+    background: linear-gradient(#ff79da, #9356dc);
+    background-clip: text;
+    color: transparent;
+    transition: all 400ms;
+  }
+  &:hover &--full {
+    opacity: 1;
+  }
+  &:hover &--empty {
+    opacity: 0;
+  }
 }
