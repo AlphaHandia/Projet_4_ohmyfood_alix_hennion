@@ -1,8 +1,9 @@
 body {
   height: auto;
-  margin: 0px;
+  margin: auto;
   padding: 0px;
   background: #ffffff;
+  max-width: 1440px;
 }
 
 h1 {
